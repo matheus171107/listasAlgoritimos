@@ -24,6 +24,7 @@ void verificaBissexto(int ano, int *diasMes, int *diasAno){
         *diasAno = 365; 
     }
 }
+
 void ordenarDatas(){
     if(data1.ano > data2.ano){
         dataTemp.dia = data1.dia;
@@ -50,8 +51,9 @@ int main(){
     printf("Digite a segunda data (EX 10 08 2008): "); 
     scanf("%d %d %d", &data2.dia, &data2.mes, &data2.ano);
 
-    anosDecorridos = data2.ano - data1.ano;
     ordenarDatas();
+    anosDecorridos = data2.ano - data1.ano;
+    
 
     if(anosDecorridos >= 2){
 
